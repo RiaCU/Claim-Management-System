@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="mb-3 pt-5 ps-5 h1">Claims</div>
+    <div style="padding: 40px;">
+    <table class="table table-striped table-hover" *ngIf="claims && claims.length > 0">
+        <thead>
+            <tr>
+                <th>Claim Number</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th> </th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let clm of claims">
+                <td>{{ clm.claimId }}</td>
+                <td>{{ clm.firstName }}</td>
+                <td>{{ clm.lastName }}</td>
+                <td>{{ clm.emailId}}</td>
+                <td><a [routerLink]="['/claim/update/', clm.claimId]">Update</a></td>
+                <td><a [routerLink]="['/claim/download/', clm.claimId]">Download</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf=" claims.length <= 0">No records found</p>
+    
+</div>
+</div>
+

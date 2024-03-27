@@ -1,0 +1,150 @@
+<section style="background-color: #eee;">
+    <div class="row d-flex justify-content-center align-items-center h-100 p-3">
+      <div class="col-lg-10 col-xl-8" id="claim">
+        <div class="card ps-4">
+            <div class="row pt-3 pb-5 d-flex justify-content-center align-items-center">
+            <div class="col-4">
+                <img style="height: 3cm; width: 3cm" src="https://static.vecteezy.com/system/resources/thumbnails/005/386/554/small/healthy-care-logo-medical-nature-logo-free-vector.jpg">
+            </div>
+            <div class="col-8">
+                <div class="h1 ">Claim Form</div>
+            </div></div>
+            <form class="row px-md-2 g-4 ms-4" #form ="ngForm">
+
+                <div class="row mt-3 mb-3">
+                    <div class="col">
+                        <div class="row col-11">
+                            <label class="form-label fw-bold" for="cId">Claim Number</label> 
+                            <input class="form-control " type="number" id="cId" value="{{updateClaim.claimId}}" readonly>
+                        </div>
+                    </div>
+                </div>
+              <div class="row">
+                  <div class="col">
+                      <div class="row col-10">
+                          <label class="form-label fw-bold" for="firstname">First Name</label>
+                          <input type="text" class="form-control" id="firstname" value="{{updateClaim.firstName}}" readonly>
+                      </div>
+                  </div>
+
+                  <div class="col">
+                      <div class="row col-10">
+                          <label class="form-label fw-bold" for="middlename">Middle Name</label>
+                          <input type="text" class="form-control" id="middlename" value="{{updateClaim.middleName}}" readonly>
+                      </div>
+                  </div>
+                  
+                  <div class="col">
+                      <div class=" row col-10">
+                          <label class="form-label fw-bold" for="lastname">Last Name</label>
+                          <input type="text" class="form-control" id="lastname" value="{{updateClaim.lastName}}" readonly>
+                      </div>      
+                  </div>
+              </div>
+
+              <div class="row mt-3">
+                  <div class="col">
+                      <div class="row col-10">
+                          <label class="form-label fw-bold" for="add">Address</label> 
+                          <input class="form-control " type="text" id="add" value="{{updateClaim.address}}" readonly>
+                      </div>
+                  </div>
+                  
+                  <div class="col">
+                      <div class="row col-10">
+                          <label class="form-label fw-bold" for="date">Date Of Birth</label> 
+                          <input class="form-control " type="text"  id="date" value="{{updateClaim.dob}}" readonly>
+                      </div>
+                  </div>
+              </div>
+                  
+              <div class="row mt-3">
+                <div class="col">
+                    <div class="row col-10">
+                        <label class="form-label fw-bold" for="gender">Gender</label>
+                        <input class="form-control" type="text" id="gender" value="{{updateClaim.gender}}" readonly>
+                    </div>
+                </div>
+
+                  <div class="col">
+                      <div class="row col-10">
+                          <label class="form-label fw-bold" for="age">Age</label>
+                          <input type="number" class="form-control" id="age" value="{{updateClaim.age}}" readonly>    
+                      </div>
+                  </div> 
+              </div>
+
+              <div class="row mt-3">
+                  <div class="col">                        
+                      <div class="row col-11">
+                          <label class="form-label fw-bold" for="email">Email</label>
+                          <input class="form-control" type="text" id="email" value="{{updateClaim.emailId}}" readonly>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="row mt-3">
+                  <div class="col">
+                      <div class="row col-10">
+                          <label class="form-label fw-bold" for="ste">State</label>
+                          <input class="form-control" type="text" id="ste" value="{{updateClaim.state}}" readonly>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="row col-10">
+                          <label class="form-label fw-bold" for="cty">City</label>
+                          <input class="form-control" type="text" id="cty" value="{{updateClaim.city}}" readonly>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row mt-3">
+                  <div class="col">
+                      <div class="row col-10">
+                          <label class="form-label fw-bold" for="hid">Hospital Id</label>
+                          <input class="form-control" type="text" id="hid" value="{{updateClaim.hospitalId}}" readonly>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="row col-10">
+                          <label class="form-label fw-bold" for="tid">Template Id</label>
+                          <input class="form-control" type="text" id="tid" value="{{updateClaim.templateId}}" readonly>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="row mt-3">
+                  <div class="col">
+                  <div class="row col-10">
+                      <label class="form-label fw-bold" for="sid">Service Id</label>
+                      <input class="form-control" type="text" id="sid" value="{{updateClaim.serviceId}}" readonly>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="row col-10">
+                      <label class="form-label fw-bold" for="amount">Amount</label>
+                      <input type="number"  class="form-control" id="amount" value="{{updateClaim.claimAmount}}" readonly>
+                  </div>
+              </div>
+              </div>
+
+<br>
+          
+                <div class="row p-5">
+                     <div class="col-5 d-flex justify-content-end">
+                        <button class="btn btn-block btn-lg text-body" (click)="generatePDF()"><i class="bi bi-download"></i> Download</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-light btn-block btn-lg text-body" (click)="close()"> Close </button>
+                    </div>
+                </div> 
+
+
+            </form>
+
+          </div>
+        </div>
+      
+    </div>
+
+</section>

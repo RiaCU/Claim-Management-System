@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\2134257\\OneDrive - Cognizant\\Desktop\\Claim management System - Case Study 2\\ClaimManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{084CCDFE-58EA-4D6E-95BC-91A70BCCAC48}|ClaimManagementSystem\\ClaimManagementSystem.csproj|c:\\users\\2134257\\onedrive - cognizant\\desktop\\claim management system - case study 2\\claimmanagementsystem\\claimmanagementsystem\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{084CCDFE-58EA-4D6E-95BC-91A70BCCAC48}|ClaimManagementSystem\\ClaimManagementSystem.csproj|solutionrelative:claimmanagementsystem\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{084CCDFE-58EA-4D6E-95BC-91A70BCCAC48}|ClaimManagementSystem\\ClaimManagementSystem.csproj|c:\\users\\2134257\\onedrive - cognizant\\desktop\\claim management system - case study 2\\claimmanagementsystem\\claimmanagementsystem\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{084CCDFE-58EA-4D6E-95BC-91A70BCCAC48}|ClaimManagementSystem\\ClaimManagementSystem.csproj|solutionrelative:claimmanagementsystem\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{084CCDFE-58EA-4D6E-95BC-91A70BCCAC48}|ClaimManagementSystem\\ClaimManagementSystem.csproj|c:\\users\\2134257\\onedrive - cognizant\\desktop\\claim management system - case study 2\\claimmanagementsystem\\claimmanagementsystem\\models\\claims.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{084CCDFE-58EA-4D6E-95BC-91A70BCCAC48}|ClaimManagementSystem\\ClaimManagementSystem.csproj|solutionrelative:claimmanagementsystem\\models\\claims.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{084CCDFE-58EA-4D6E-95BC-91A70BCCAC48}|ClaimManagementSystem\\ClaimManagementSystem.csproj|c:\\users\\2134257\\onedrive - cognizant\\desktop\\claim management system - case study 2\\claimmanagementsystem\\claimmanagementsystem\\models\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{084CCDFE-58EA-4D6E-95BC-91A70BCCAC48}|ClaimManagementSystem\\ClaimManagementSystem.csproj|solutionrelative:claimmanagementsystem\\models\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{084CCDFE-58EA-4D6E-95BC-91A70BCCAC48}|ClaimManagementSystem\\ClaimManagementSystem.csproj|c:\\users\\2134257\\onedrive - cognizant\\desktop\\claim management system - case study 2\\claimmanagementsystem\\claimmanagementsystem\\services\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{084CCDFE-58EA-4D6E-95BC-91A70BCCAC48}|ClaimManagementSystem\\ClaimManagementSystem.csproj|solutionrelative:claimmanagementsystem\\services\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Claims.cs",
+              "DocumentMoniker": "C:\\Users\\2134257\\OneDrive - Cognizant\\Desktop\\Claim management System - Case Study 2\\ClaimManagementSystem\\ClaimManagementSystem\\Models\\Claims.cs",
+              "RelativeDocumentMoniker": "ClaimManagementSystem\\Models\\Claims.cs",
+              "ToolTip": "C:\\Users\\2134257\\OneDrive - Cognizant\\Desktop\\Claim management System - Case Study 2\\ClaimManagementSystem\\ClaimManagementSystem\\Models\\Claims.cs",
+              "RelativeToolTip": "ClaimManagementSystem\\Models\\Claims.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAmwBMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-02T13:44:51.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResetPassword.cs",
+              "DocumentMoniker": "C:\\Users\\2134257\\OneDrive - Cognizant\\Desktop\\Claim management System - Case Study 2\\ClaimManagementSystem\\ClaimManagementSystem\\Models\\ResetPassword.cs",
+              "RelativeDocumentMoniker": "ClaimManagementSystem\\Models\\ResetPassword.cs",
+              "ToolTip": "C:\\Users\\2134257\\OneDrive - Cognizant\\Desktop\\Claim management System - Case Study 2\\ClaimManagementSystem\\ClaimManagementSystem\\Models\\ResetPassword.cs",
+              "RelativeToolTip": "ClaimManagementSystem\\Models\\ResetPassword.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-17T07:34:31.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClaimController.cs",
+              "DocumentMoniker": "C:\\Users\\2134257\\OneDrive - Cognizant\\Desktop\\Claim management System - Case Study 2\\ClaimManagementSystem\\ClaimManagementSystem\\Controllers\\ClaimController.cs",
+              "RelativeDocumentMoniker": "ClaimManagementSystem\\Controllers\\ClaimController.cs",
+              "ToolTip": "C:\\Users\\2134257\\OneDrive - Cognizant\\Desktop\\Claim management System - Case Study 2\\ClaimManagementSystem\\ClaimManagementSystem\\Controllers\\ClaimController.cs",
+              "RelativeToolTip": "ClaimManagementSystem\\Controllers\\ClaimController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAC0AAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-17T06:37:12.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "C:\\Users\\2134257\\OneDrive - Cognizant\\Desktop\\Claim management System - Case Study 2\\ClaimManagementSystem\\ClaimManagementSystem\\Services\\IAdminService.cs",
+              "RelativeDocumentMoniker": "ClaimManagementSystem\\Services\\IAdminService.cs",
+              "ToolTip": "C:\\Users\\2134257\\OneDrive - Cognizant\\Desktop\\Claim management System - Case Study 2\\ClaimManagementSystem\\ClaimManagementSystem\\Services\\IAdminService.cs",
+              "RelativeToolTip": "ClaimManagementSystem\\Services\\IAdminService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-16T13:30:52.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\2134257\\OneDrive - Cognizant\\Desktop\\Claim management System - Case Study 2\\ClaimManagementSystem\\ClaimManagementSystem\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "ClaimManagementSystem\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\2134257\\OneDrive - Cognizant\\Desktop\\Claim management System - Case Study 2\\ClaimManagementSystem\\ClaimManagementSystem\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "ClaimManagementSystem\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAuwFwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-14T09:05:37.354Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

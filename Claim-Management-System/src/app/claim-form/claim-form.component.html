@@ -1,0 +1,231 @@
+<section style="background-color: #eee;">
+      <div class="row d-flex justify-content-center align-items-center h-100 p-3">
+        <div class="col-lg-10 col-xl-8">
+          <div class="card ps-4">
+            <div class="row pt-3 pb-5 d-flex justify-content-center align-items-center">
+                <div class="col-4">
+                    <img style="height: 3cm; width: 3cm" src="https://static.vecteezy.com/system/resources/thumbnails/005/386/554/small/healthy-care-logo-medical-nature-logo-free-vector.jpg">
+                </div>
+                <div class="col-8">
+                    <div class="h1 ">Claim Form</div>
+                </div></div>
+              <form [formGroup]="claimForm" class="row px-md-2 g-4" (ngSubmit)="claimSubmitted()">
+                
+                <div class="row">
+                    <div class="col">
+                        <div class="row col-10">
+                            <label class="form-label" for="fn">First Name</label>
+                            <input type="text"  class="form-control" id="fn"  placeholder= "First Name" formControlName="fname" [(ngModel)]="claim.FirstName" [ngModelOptions]="{standalone: true}">
+                        </div>
+                        <div class="row">
+                            <div class="form-text text-danger" *ngIf="FirstName.errors?.['required']">Required</div>
+                            <div class="form-text text-danger" *ngIf="FirstName.errors?.['minlength'] && (FirstName.touched || FirstName.dirty)">
+                                Must contain at least 3 and at most 20 characters.
+                              </div>
+                              <div class="form-text text-danger" *ngIf="FirstName.errors?.['maxlength'] && (FirstName.touched || FirstName.dirty)">
+                                Must contain at least 3 and at most 20 characters.
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="row col-10">
+                            <label class="form-label" for="middlename">Middle Name</label>
+                            <input type="text" class="form-control" id="middlename"  placeholder= "Middle Name" [(ngModel)]="claim.MiddleName" [ngModelOptions]="{standalone: true}">
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class=" row col-10">
+                            <label class="form-label" for="lastname">Last Name</label>
+                            <input type="text" formControlName="lname" class="form-control" id="lastname"  placeholder= "Last Name" [(ngModel)]="claim.LastName" [ngModelOptions]="{standalone: true}">
+                        </div>
+                    
+                        <div class="row">
+                            <div class="form-text text-danger" *ngIf="LastName.errors?.['required']">Required</div>
+                            <div class="form-text text-danger" *ngIf="LastName.errors?.['minlength'] && (LastName.touched || LastName.dirty)">
+                                Must contain at least 3 and at most 20 characters.
+                              </div>
+                              <div class="form-text text-danger" *ngIf="LastName.errors?.['maxlength'] && (LastName.touched || LastName.dirty)">
+                                Must contain at least 3 and at most 20 characters.
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+  
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="row col-10">
+                            <label class="form-label" for="add">Address</label> 
+                            <input class="form-control " formControlName="address" type="text" id="add"  placeholder= "Enter Address" [(ngModel)]="claim.Address" [ngModelOptions]="{standalone: true}">
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-text text-danger" *ngIf="Address.errors?.['required']">
+                            Required
+                            </div>
+                              <div class="form-text text-danger" *ngIf="Address.errors?.['maxlength'] && (Address.touched || Address.dirty)">
+                                Must contain at most 100 characters.
+                              </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="row col-10">
+                            <label class="form-label" for="date">Date Of Birth</label> 
+                            <input class="form-control " type="date" formControlName="dob"  id="date" [max]= today [(ngModel)]="claim.DOB" [ngModelOptions]="{standalone: true}">
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-text text-danger" *ngIf="DOB.errors?.['required']">
+                            Required
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                    
+                <div class="row mt-3">
+                    <div class="col">
+                            <div class="form-label" for="gender">Gender</div>
+                                <div class="form-check form-check-inline mt-2">
+                                    <input class="form-check-input " type="radio" id="male" value="male" formControlName="gender" [(ngModel)]="claim.Gender" [ngModelOptions]="{standalone: true}">
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="female" value="female" formControlName="gender" [(ngModel)]="claim.Gender" [ngModelOptions]="{standalone: true}">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                            
+                        <div class="row mb-2">
+                            <div class="form-text text-danger" *ngIf="Gender.errors?.['required']">
+                            Required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row col-10">
+                            <label class="form-label" for="age">Age</label>
+                            <input type="number" class="form-control" id="age" placeholder= "eg:10" [(ngModel)]="claim.Age" [ngModelOptions]="{standalone: true}">    
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">                        
+                        <div class="row col-11">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-control" type="text" formControlName="email" id="email" placeholder= "Email Id" [(ngModel)]="claim.EmailId" [ngModelOptions]="{standalone: true}">
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-text text-danger" *ngIf="EmailId.errors?.['required']">Required</div>
+                        </div>
+                        <div class="form-text text-danger" *ngIf="EmailId.errors?.['email'] && (EmailId.touched || EmailId.dirty)">
+                            Email id should contain @ and. symbols.
+                          </div>
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="row col-10">
+                            <label class="form-label" for="ste">State</label>
+                            <input type="text" class="form-control" id="ste" formControlName="state"  placeholder= "eg: West Bengal" [(ngModel)]="claim.State" [ngModelOptions]="{standalone: true}"> 
+                        </div>
+                    
+                        <div class="row mb-2">
+                            <div class="form-text text-danger" *ngIf="State.errors?.['required']">
+                            Required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row col-10">
+                            <label class="form-label" for="cty">City</label>
+                            <input type="text" class="form-control" id="cty" formControlName="city" [(ngModel)]="claim.City"  placeholder= "eg: Howrah" [ngModelOptions]="{standalone: true}">
+                        </div>
+                        
+                        <div class="row mb-2">
+                            <div class="form-text text-danger" *ngIf="City.errors?.['required']">
+                            Required
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="row col-10">
+                            <label class="form-label" for="hname">Hospital Name</label>
+                            <select class="form-select"id="hname" formControlName="hName" [(ngModel)]="claim.HospitalId" [ngModelOptions]="{standalone: true}">
+                                <option selected>--Choose Hospital Name--</option>
+                                <option *ngFor="let h of hospital" value="{{h.hospitalId}}">{{h.hospitalName}}</option>
+                                
+                            </select>
+                        </div>
+                    
+                        <div class="row mb-2">
+                            <div class="form-text text-danger" *ngIf="HospitalId.errors?.['required']">
+                            Required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row col-10">
+                            <label class="form-label" for="tname">Template Id</label>
+                            <select class="form-select"id="tname" formControlName="tName" [(ngModel)]="claim.TemplateId" [ngModelOptions]="{standalone: true}">
+                                <option selected>Template Id</option>
+                                <option *ngFor="let t of template">{{t.templateId}}</option>
+                            </select>
+                        </div>
+                        
+                        <div class="row mb-2">
+                            <div class="form-text text-danger" *ngIf="TemplateId.errors?.['required']">
+                            Required
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                    <div class="row col-10">
+                        <label class="form-label" for="sname">Service Name</label>
+                        <select class="form-select" id="sname" formControlName="sName" [(ngModel)]="claim.ServiceId" [ngModelOptions]="{standalone: true}">
+                            <option selected>--Choose Service Name--</option>
+                            <option *ngFor="let s of service" value="{{s.serviceId}}">{{s.serviceName}}</option>
+                          </select>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="form-text text-danger" *ngIf="ServiceId.errors?.['required']">
+                          Required
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row col-10">
+                        <label class="form-label" for="amount">Amount</label>
+                        <input type="number" class="form-control" id="amount" placeholder= "1000" [(ngModel)]="claim.ClaimAmount" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+                </div>
+
+<br>
+            
+                <div class="d-flex justify-content-center pb-5">
+                  <button type="submit" [disabled]="claimForm.invalid" class="btn btn-success btn-block btn-lg text-body">Register</button>
+                </div>
+
+  
+              </form>
+  
+            </div>
+          </div>
+        
+      </div>
+ 
+  </section>

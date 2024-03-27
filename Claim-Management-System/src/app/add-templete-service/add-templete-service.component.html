@@ -1,0 +1,69 @@
+<section>
+    <form class="ps-5 pe-5 pt-5" [formGroup]="serviceForm">
+        <h1 class="fw-bold">Service:</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Service Name</th>
+                <th scope="col">Catagory</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="col-3">
+                    <input type="text" class="form-control" formControlName="sname"  [(ngModel)]="service.ServiceName">
+                </td>
+                <td class="col-3">
+                    <select class="form-select" formControlName="cId" [(ngModel)]="service.CatagoryId">
+                        <option>--Choose Catagory--</option>
+                        <option *ngFor="let c of catagory" value="{{c.catagoryId}}">{{c.catagoryName}}</option>
+                        
+                    </select>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-success btn-block btn-lg text-body" (click)="addService()">Add</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</section>
+
+
+<section >
+    <form class="ps-5 pe-5" [formGroup]="templateForm">
+        <h1 class="fw-bold">Template:</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Service Name</th>
+                <th scope="col">Bucket Amount</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="col-3">
+                    <select class="form-select" formControlName="serviceId" [(ngModel)]="template.ServiceId">
+                        <option selected>--Choose Service--</option>
+                        <option *ngFor="let s of ser" value="{{s.serviceId}}">{{s.serviceName}}</option>
+                        
+                    </select>
+                </td>
+                <td class="col-3">
+                    <input type="text" class="form-control" formControlName="amt" [(ngModel)]="template.AmmountAllocated">
+                </td>
+                <td>
+                    <button type="button" class="btn btn-success btn-block btn-lg text-body" (click)="addTemplate()">Add</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <div class="col ps-5">
+        <button type="button" class="btn btn-link btn-block btn-lg text-body" (click)="viewClaims()">View Claims</button>
+        <button type="button" class="btn btn-link btn-block btn-lg text-body" (click)="viewTemplate()">View Template</button>
+    </div>
+</section>
